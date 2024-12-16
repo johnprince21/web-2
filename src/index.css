@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100% !important;
+}
+
+.attachment {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.41), rgba(255, 255, 255, 0.41)), url('./assets/img-1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+}
+
+.sectionTwo {
+  background-image: url('./assets/img-2.jpg');
+  height: 55%;
+  width: 45%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-image {
+  background-image: url('./assets/img-3.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top;
+}
+
+.dataBox {
+  @apply h-36 w-36 border rounded-lg shadow-md p-2 flex gap-2 text-xl text-white flex-col items-center
+}
+
+.goals {
+  @apply w-full border rounded-lg px-4 py-2 bg-white flex flex-wrap justify-between items-center gap-3
+}
+
+.tablehead {
+  @apply px-4 py-2 text-left font-bold text-primary-500
+}
+
+.addLable {
+  @apply block text-sm font-medium text-gray-700
+}
+
+.addinput {
+  @apply mt-1 block w-full px-3 py-2 border border-primary-500 outline-primary-700 rounded-md
+}
